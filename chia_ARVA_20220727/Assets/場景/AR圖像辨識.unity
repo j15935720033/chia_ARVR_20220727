@@ -256,8 +256,8 @@ GameObject:
   - component: {fileID: 264486272}
   - component: {fileID: 264486271}
   - component: {fileID: 264486270}
-  - component: {fileID: 264486274}
   - component: {fileID: 264486273}
+  - component: {fileID: 264486274}
   m_Layer: 0
   m_Name: vufaria_image_KID
   m_TagString: Untagged
@@ -1171,7 +1171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476257971}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.4743, y: 0.0717, z: -0.4701}
+  m_LocalPosition: {x: 0.344, y: 0.109, z: -0.466}
   m_LocalScale: {x: 0.181332, y: 0.21978, z: 1.8359166}
   m_ConstrainProportionsScale: 0
   m_Children: []

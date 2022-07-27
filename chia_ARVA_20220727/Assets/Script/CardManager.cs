@@ -22,13 +22,14 @@ namespace chia.AR.Vuforia
         private VirtualButtonBehaviour vbbJump;
 
         private string parVictory = "觸發勝利";
+        private AudioSource audBGM;
         private void Awake()
         {
             observerKID.OnTargetFound.AddListener(CardFound);//目標找到事件   //.AddListener(方法)
             observerKID.OnTargetLost.AddListener(CardLost);//目標遺失事件
             btnAttack.onClick.AddListener(Attack);//按鈕點擊事件
             vbbJump.RegisterOnButtonPressed(OnJmpPressed);
-
+            audBGM = GameObject.Find("BGM").GetComponent<AudioSource>();
         }
 
         private void OnJmpPressed(VirtualButtonBehaviour obj)
@@ -43,6 +44,7 @@ namespace chia.AR.Vuforia
         {
             print("<color=yellow>找到卡片</color>");
             aniKnight.SetTrigger(parVictory);
+            audBGM.Play();
         }
         /// <summary>
         /// 圖片辨識失敗
@@ -50,6 +52,7 @@ namespace chia.AR.Vuforia
         private void CardLost()
         {
             print("<color=red>卡片辨識失敗</color>");
+            audBGM.Stop();
         }
         private void Attack()
         {

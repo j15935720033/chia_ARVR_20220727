@@ -85,7 +85,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Trigger_Victory
+    m_ConditionEvent: "\u89F8\u767C\u52DD\u5229"
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5121990007052968952}
@@ -110,7 +110,7 @@ AnimatorController:
   m_Name: RPGControl
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Trigger_Victory
+  - m_Name: "\u89F8\u767C\u52DD\u5229"
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
